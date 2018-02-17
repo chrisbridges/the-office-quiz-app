@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Office Quiz</title>
+    <meta name="description" content="This is an expert-level Office quiz for the show's most die-hard of fans.">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header role="banner">
+      <a href="index.html">
+        <img class="the-office-logo" src="https://fanart.tv/fanart/tv/73244/clearlogo/theoffice(US)-73244.png" alt="The Office logo">
+      </a>
+      <ul class="question-score-info">
+        <li>Question: <span class="question-number">0</span>/<span class="number-of-questions">10</span></li>
+        <li>Score: <span class="score">0</span></li>
+      </ul>
+    </header>
+    
+    <main role="main">
+      <div class="quiz-start js-quiz-start"> <!-- Quiz Start Page -->
+        <h1>Are you the ultimate Office fan?</h1>
+        <button type="submit" class="start-button">Yeppers</button>
+      </div> 
+      <div class="question-form js-question-form"></div> 
+    </main>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="questions.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

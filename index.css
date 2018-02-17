@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('https://www.desktopbackground.org/download/o/2015/08/02/989019_31-the-office-us-hd-wallpapers_1600x1200_h.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-position: right;
+  color: white;
+  font-family: 'Helvetica', Sans-Serif;
+}
+
+body::after {
+  content: "";
+  background: black;
+  opacity: 0.6;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+legend {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.the-office-logo {
+  display: block;
+  max-height: 80px;
+  margin: 0 auto;
+}
+
+.question-score-info {
+  text-align: center;
+  font-size: 22px;
+}
+
+header {
+  width: 100%;
+}
+
+header ul li {
+  list-style: none;
+  display: inline;
+}
+
+.quiz-start {
+  text-align: center;
+}
+
+main {
+  clear: both;
+  padding-top: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  padding: 10px 30px;
+}
+
+button:hover, button:focus {
+  background-color: black;
+  color: white;
+}
+
+.question-form, .quiz-start {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.question-form {
+  padding: 20px;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  margin-right: 10px;
+}
+
+label {
+  background-color: darkgray;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  transition: background-color 0.3s ease;
+}
+      
+label:hover, label:focus, form input[type="radio"]:checked + label {
+  background-color: #EE7600;
+}
+
+.question button {
+  display: block;
+}
+
+.correct-answer {
+  text-decoration: underline;
+}
+
+.result-image {
+  margin: 0 auto;
+  width: 75%;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 640px) {
+  
+  main {
+    padding-top: 50px;
+  }
+  
+  legend {
+    font-size: 24px;
+  }
+  
+  .question-score-info li {
+      float: right;
+      margin-right: 15px;
+  }
+  
+  .the-office-logo {
+    float: left;
+    padding-left: 20px;
+  }
+  
+  label {
+    margin-bottom: 40px;
+  }
